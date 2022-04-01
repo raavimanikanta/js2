@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>What is Hoisting</h1>
+    <h3>Hoisting is a phenomena by which we can access the variables and functions before we initialise it.</h3>
+    <pre>
+        var a=20;
+        console.log(sum(6,4))
+        function Sum (a,b){
+            return a+b;
+        }
+        console.log(a);
+
+        Output:- 
+        10.
+        20.
+    </pre>
+    <h1>Var,Let,Const</h1>
+    <h3>
+    <pre>
+       Var is a functional scope and Global scope.
+       In this Redeclaration and Reinitialization are possible
+       
+       let is a Block scope.
+       In this Redeclaration and Reinitialization are not possible
+
+       const is a Block scope. 
+       In this Redeclaration and Reinitialization are not possible
+   </pre>
+    </h3>
+    <h1>closure</h1>
+    <h3>
+    <pre>
+      Functions bundled together with lexical-Environment forms the closure .If we want to invoke the function 
+      which has alredy been vansihed or deleted from callstack .closures helps in maintaining the reference to which we are pointing .
+    </pre>
+    </h3>
+    <h1>Temporal-Dead-Zone</h1>
+    <h3>
+    <pre>
+      This is what the TDZ is: the term to describe the state where variables are un-reachable. They are in scope, but they aren't declared.
+      The let and const variables exist in the TDZ from the start of their enclosing scope until they are declared.
+    </pre>
+    </h3>
+</body>
+</html>
